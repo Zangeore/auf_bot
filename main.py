@@ -5,6 +5,9 @@ from gtts import gTTS
 from PIL import Image, ImageDraw, ImageFont
 import random
 
+def reister(cb):
+    cb(AUFmod)
+
 
 class AUFmod(loader.Module):
 
