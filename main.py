@@ -7,7 +7,7 @@ import random
 
 
 class AUFmod(loader.Module):
-    """Символ пмздабольства 2020"""
+
     strings = {
         "name": "AUFmod"
     }
