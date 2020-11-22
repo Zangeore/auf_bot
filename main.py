@@ -6,7 +6,7 @@ from PIL import Image, ImageDraw, ImageFont
 import random
 
 def register(cb):
-    cb(AUFmod)
+    cb(AUFmod())
 
 
 class AUFmod(loader.Module):
