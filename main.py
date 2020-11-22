@@ -5,7 +5,7 @@ from gtts import gTTS
 from PIL import Image, ImageDraw, ImageFont
 import random
 
-def reister(cb):
+def register(cb):
     cb(AUFmod)
 
 
