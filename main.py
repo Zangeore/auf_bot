@@ -37,6 +37,7 @@ class AufMod(loader.Module):
         tts = gTTS(text=ctt, lang='ru')
         tts.save("main.mp3")
 
+        await message.edit("Созыв волков...")
         f=open(r"main.mp4","wb")
         ufr=get(url+"main.mp4")
         f.write(ufr.content)
@@ -52,5 +53,6 @@ class AufMod(loader.Module):
         -f mpegts vid2.webm -y")
         os.system('ffmpeg -i "concat:vid1.webm|vid2.webm" out.mp4 -y')
 
+        await message.edit("Отправляю...")
         send=open("out.mp4", "rb")
         await message.client.send_file(message.to_id, send)
